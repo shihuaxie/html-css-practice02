@@ -1,0 +1,176 @@
+.main {
+  width: 980px;
+  height: 455px;
+  margin-left: 220px;
+  margin-top: 10px;
+}
+.focus {
+  float: left;
+  width: 721px;
+  height: 455px;
+}
+.newsflash {
+  float: right;
+  width: 250px;
+  height: 455px;
+}
+.news {
+  height: 165px;
+  border: 1px solid #e4e4e4;
+}
+.news_hd {
+  height: 33px;
+  line-height: 33px;
+  border-bottom: 1px dotted #e4e4e4;
+  padding: 0 15px;
+}
+.news_hd h5 {
+  float: left;
+  font-size: 14px;
+}
+
+.news_hd .more {
+  float: right;
+}
+.news_hd .more::after {
+  content: "\e904";
+  font-family: "icomoon";
+}
+.news_bd {
+  padding: 5px 15px 0;
+}
+.news_bd ul li {
+  height: 24px;
+  line-height: 24px;
+  /* 超出部分的文字一行显示，有省略号 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.lifeservice {
+  /* 这里的overflow是因为给ul宽度后，252多了2px，所以让溢出部分hidden。 */
+  overflow: hidden;
+  height: 209px;
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+}
+/* 这里是lifeservice的盒子装不下li, 此时ul也是li的父亲，所以增大了ul的宽度 63*4，就是252px */
+.lifeservice ul {
+  width: 252px;
+}
+.lifeservice ul li {
+  float: left;
+  width: 63px;
+  height: 71px;
+  border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  text-align: center;
+}
+.lifeservice ul li i {
+  display: inline-block;
+  width: 24px;
+  height: 28px;
+  background: url(/images/icons.png) no-repeat -18px -15px;
+  margin-top: 12px;
+}
+.bargain {
+  margin-top: 5px;
+}
+/* 推荐模块 */
+.recom {
+  height: 163px;
+  background-color: #ebebeb;
+  margin-top: 12px;
+}
+.recom_hd {
+  float: left;
+  height: 163px;
+  width: 205px;
+  background-color: #5c5251;
+  text-align: center;
+  padding-top: 30px;
+}
+.recom_bd {
+  float: left;
+}
+.recom_bd ul li {
+  position: relative;
+  float: left;
+}
+/* 这一步是为了让图片大小完全符合li盒子的大小（以防美工切图不标准。 */
+.recom_bd ul li img {
+  width: 248px;
+  height: 163px;
+}
+.recom_bd ul li:nth-child(-n + 3)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 1px;
+  height: 145px;
+  background-color: #ddd;
+}
+/* 家用电器模块 */
+.box_hd {
+  height: 30px;
+  border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+  float: left;
+  font-size: 18px;
+  color: #c81623;
+  font-weight: 400;
+}
+.tab-list {
+  float: right;
+}
+.tab-list ul li {
+  float: left;
+}
+.tab-list ul li a {
+  margin: 0 15px;
+}
+.floor .w {
+  margin-top: 30px;
+}
+.box_bd {
+  height: 361px;
+}
+.tab-list-item > div {
+  float: left;
+}
+.col_210 {
+  width: 210px;
+  background-color: #f9f9f9;
+  height: 361px;
+  text-align: center;
+}
+.col_210 ul {
+  padding-left: 12px;
+}
+.col_210 ul li {
+  float: left;
+  width: 85px;
+  height: 34px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  line-height: 33px;
+  margin-right: 10px;
+}
+.col_329 {
+  width: 329px;
+}
+.col_221 {
+  width: 221px;
+  border-right: 1px solid #ccc;
+}
+.col_219 {
+  width: 219px;
+}
+/* 一般情况下。a如果包含有宽度的盒子， a需要转换为块级元素 */
+.bb {
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
